@@ -1,0 +1,172 @@
+:root {
+  --brand: #0f766e;
+  --brand-dark: #134e4a;
+  --ink: #17202a;
+  --muted: #64748b;
+  --soft: #f3f7f8;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--ink);
+  background-color: #ffffff;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid rgba(15, 118, 110, 0.45);
+  outline-offset: 3px;
+}
+
+.navbar {
+  box-shadow: 0 2px 16px rgba(15, 23, 42, 0.08);
+}
+
+.navbar-brand {
+  font-weight: 700;
+}
+
+.nav-link {
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  color: var(--brand);
+}
+
+.hero-slide {
+  min-height: 430px;
+  background-position: center;
+  background-size: cover;
+}
+
+.hero-notebooks {
+  background-image: url("../images/hero/notebooks.jpg");
+}
+
+.hero-audio {
+  background-image: url("../images/hero/audio.jpg");
+}
+
+.hero-setup {
+  background-image: url("../images/hero/setup.jpg");
+}
+
+.hero-overlay {
+  min-height: 430px;
+  background: linear-gradient(90deg, rgba(7, 31, 40, 0.84), rgba(7, 31, 40, 0.3));
+}
+
+.section-soft {
+  background-color: var(--soft);
+}
+
+.section-label {
+  color: var(--brand);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.product-card {
+  height: 100%;
+  border: 1px solid rgba(15, 23, 42, 0.1);
+  overflow: hidden;
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.12);
+}
+
+.product-card img {
+  height: 220px;
+  object-fit: cover;
+}
+
+.card-text,
+.text-muted-custom {
+  color: var(--muted);
+}
+
+.badge-tech {
+  background-color: rgba(15, 118, 110, 0.12);
+  color: var(--brand-dark);
+}
+
+.btn-brand {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: var(--brand);
+  --bs-btn-border-color: var(--brand);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: var(--brand-dark);
+  --bs-btn-hover-border-color: var(--brand-dark);
+}
+
+.feature-box {
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  transition: transform 180ms ease, border-color 180ms ease;
+}
+
+.feature-box:hover {
+  transform: translateY(-3px);
+  border-color: rgba(15, 118, 110, 0.4);
+}
+
+.feature-icon {
+  width: 3rem;
+  height: 3rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.75rem;
+  background-color: #dff4f1;
+  color: var(--brand-dark);
+  font-weight: 700;
+}
+
+footer {
+  background-color: #101820;
+}
+
+@media (max-width: 767.98px) {
+  .hero-slide,
+  .hero-overlay {
+    min-height: 360px;
+  }
+
+  .hero-notebooks {
+    background-image: url("../images/hero/mobile/notebooks.webp");
+  }
+
+  .hero-audio {
+    background-image: url("../images/hero/mobile/audio.webp");
+  }
+
+  .hero-setup {
+    background-image: url("../images/hero/mobile/setup.webp");
+  }
+
+  .display-5 {
+    font-size: 2rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .product-card,
+  .feature-box {
+    transition: none;
+  }
+
+  .product-card:hover,
+  .feature-box:hover {
+    transform: none;
+  }
+}

@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Catalogo responsivo de productos tecnologicos creado con Bootstrap 5.">
+    <title>TechNova Store | Productos Tech</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/styles.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-white sticky-top" aria-label="Navegacion principal">
+      <div class="container">
+        <a class="navbar-brand text-dark" href="#">TechNova Store</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menu de navegacion">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menuPrincipal">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#productos">Productos</a></li>
+            <li class="nav-item"><a class="nav-link" href="#categorias">Categorias</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header id="inicio">
+      <div id="carouselPromociones" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselPromociones" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Promocion notebooks"></button>
+          <button type="button" data-bs-target="#carouselPromociones" data-bs-slide-to="1" aria-label="Promocion audio"></button>
+          <button type="button" data-bs-target="#carouselPromociones" data-bs-slide-to="2" aria-label="Promocion accesorios"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active hero-slide hero-notebooks">
+            <div class="hero-overlay d-flex align-items-center">
+              <div class="container text-white">
+                <div class="col-lg-7">
+                  <p class="text-uppercase fw-semibold mb-2">Nueva temporada</p>
+                  <h1 class="display-5 fw-bold">Equipos listos para estudiar, crear y jugar</h1>
+                  <p class="lead mb-4">Encuentra notebooks, accesorios y audio con opciones pensadas para cada rutina digital.</p>
+                  <a href="#productos" class="btn btn-brand btn-lg">Ver productos</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item hero-slide hero-audio">
+            <div class="hero-overlay d-flex align-items-center">
+              <div class="container text-white">
+                <div class="col-lg-7">
+                  <p class="text-uppercase fw-semibold mb-2">Audio inmersivo</p>
+                  <h2 class="display-5 fw-bold">Sonido claro para clases, reuniones y musica</h2>
+                  <p class="lead mb-4">Audifonos inalambricos, parlantes portatiles y soluciones para trabajar sin distracciones.</p>
+                  <a href="#categorias" class="btn btn-light btn-lg">Explorar categorias</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item hero-slide hero-setup">
+            <div class="hero-overlay d-flex align-items-center">
+              <div class="container text-white">
+                <div class="col-lg-7">
+                  <p class="text-uppercase fw-semibold mb-2">Setup completo</p>
+                  <h2 class="display-5 fw-bold">Accesorios para mejorar tu espacio digital</h2>
+                  <p class="lead mb-4">Teclados, mouse, monitores y bases para un escritorio mas comodo y productivo.</p>
+                  <a href="#contacto" class="btn btn-outline-light btn-lg">Contactanos</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselPromociones" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselPromociones" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section id="categorias" class="section-soft py-5">
+        <div class="container">
+          <div class="row align-items-center g-4">
+            <div class="col-lg-4">
+              <p class="text-uppercase section-label mb-2">Categorias</p>
+              <h2 class="h1 fw-bold">Tecnologia organizada para elegir mejor</h2>
+              <p class="mb-0 text-muted-custom">Compara equipos, audio y accesorios desde una estructura clara que se adapta a cualquier pantalla.</p>
+            </div>
+            <div class="col-md-4 col-lg-2">
+              <div class="feature-box text-center bg-white rounded-2 p-4 h-100">
+                <span class="feature-icon mb-3">NB</span>
+                <h3 class="h6">Notebooks</h3>
+              </div>
+            </div>
+            <div class="col-md-4 col-lg-2">
+              <div class="feature-box text-center bg-white rounded-2 p-4 h-100">
+                <span class="feature-icon mb-3">AU</span>
+                <h3 class="h6">Audio</h3>
+              </div>
+            </div>
+            <div class="col-md-4 col-lg-2">
+              <div class="feature-box text-center bg-white rounded-2 p-4 h-100">
+                <span class="feature-icon mb-3">AC</span>
+                <h3 class="h6">Accesorios</h3>
+              </div>
+            </div>
+            <div class="col-md-12 col-lg-2">
+              <div class="feature-box text-center bg-white rounded-2 p-4 h-100">
+                <span class="feature-icon mb-3">GM</span>
+                <h3 class="h6">Gaming</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="productos" class="py-5">
+        <div class="container">
+          <div class="row mb-4">
+            <div class="col-lg-8">
+              <p class="text-uppercase section-label mb-2">Catalogo</p>
+              <h2 class="h1 fw-bold">Productos destacados</h2>
+              <p class="mb-0 text-muted-custom">Seleccion de productos tecnologicos con cards responsivas construidas sobre el sistema de grillas de Bootstrap.</p>
+            </div>
+          </div>
+
+          <div class="row g-4">
+            <div class="col-sm-6 col-lg-4">
+              <article class="card product-card">
+                <picture>
+                  <source media="(max-width: 767.98px)" srcset="assets/images/products/mobile/notebook.webp" type="image/webp">
+                  <img src="assets/images/products/notebook.jpg" class="card-img-top" alt="Notebook plateado sobre un escritorio">
+                </picture>
+                <div class="card-body d-flex flex-column">
+                  <span class="badge badge-tech align-self-start mb-3">Notebook</span>
+                  <h3 class="card-title h5">NovaBook Air 14</h3>
+                  <p class="card-text">Equipo liviano con pantalla Full HD, 16 GB de RAM y bateria para jornadas extensas.</p>
+                  <div class="mt-auto d-flex justify-content-between align-items-center">
+                    <strong>$749.990</strong>
+                    <a href="#contacto" class="btn btn-sm btn-brand">Consultar</a>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <div class="col-sm-6 col-lg-4">
+              <article class="card product-card">
+                <picture>
+                  <source media="(max-width: 767.98px)" srcset="assets/images/products/mobile/headphones.webp" type="image/webp">
+                  <img src="assets/images/products/headphones.jpg" class="card-img-top" alt="Audifonos inalambricos de color negro">
+                </picture>
+                <div class="card-body d-flex flex-column">
+                  <span class="badge badge-tech align-self-start mb-3">Audio</span>
+                  <h3 class="card-title h5">SoundWave Pro</h3>
+                  <p class="card-text">Audifonos bluetooth con cancelacion de ruido y modo ambiente para estudiar o viajar.</p>
+                  <div class="mt-auto d-flex justify-content-between align-items-center">
+                    <strong>$89.990</strong>
+                    <a href="#contacto" class="btn btn-sm btn-brand">Consultar</a>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <div class="col-sm-6 col-lg-4">
+              <article class="card product-card">
+                <picture>
+                  <source media="(max-width: 767.98px)" srcset="assets/images/products/mobile/mouse.webp" type="image/webp">
+                  <img src="assets/images/products/mouse.jpg" class="card-img-top" alt="Mouse inalambrico sobre una superficie oscura">
+                </picture>
+                <div class="card-body d-flex flex-column">
+                  <span class="badge badge-tech align-self-start mb-3">Accesorio</span>
+                  <h3 class="card-title h5">ClickMaster MX</h3>
+                  <p class="card-text">Mouse ergonomico con sensor preciso, conexion inalambrica y botones programables.</p>
+                  <div class="mt-auto d-flex justify-content-between align-items-center">
+                    <strong>$34.990</strong>
+                    <a href="#contacto" class="btn btn-sm btn-brand">Consultar</a>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <div class="col-sm-6 col-lg-4">
+              <article class="card product-card">
+                <picture>
+                  <source media="(max-width: 767.98px)" srcset="assets/images/products/mobile/keyboard.webp" type="image/webp">
+                  <img src="assets/images/products/keyboard.jpg" class="card-img-top" alt="Teclado mecanico iluminado">
+                </picture>
+                <div class="card-body d-flex flex-column">
+                  <span class="badge badge-tech align-self-start mb-3">Gaming</span>
+                  <h3 class="card-title h5">KeyStorm RGB</h3>
+                  <p class="card-text">Teclado mecanico compacto con retroiluminacion y switches tactiles para escritura rapida.</p>
+                  <div class="mt-auto d-flex justify-content-between align-items-center">
+                    <strong>$59.990</strong>
+                    <a href="#contacto" class="btn btn-sm btn-brand">Consultar</a>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <div class="col-sm-6 col-lg-4">
+              <article class="card product-card">
+                <picture>
+                  <source media="(max-width: 767.98px)" srcset="assets/images/products/mobile/monitor.webp" type="image/webp">
+                  <img src="assets/images/products/monitor.jpg" class="card-img-top" alt="Monitor ancho mostrando una interfaz de trabajo">
+                </picture>
+                <div class="card-body d-flex flex-column">
+                  <span class="badge badge-tech align-self-start mb-3">Monitor</span>
+                  <h3 class="card-title h5">ViewMax 27</h3>
+                  <p class="card-text">Monitor IPS de 27 pulgadas con alta definicion, bordes delgados y ajuste de inclinacion.</p>
+                  <div class="mt-auto d-flex justify-content-between align-items-center">
+                    <strong>$189.990</strong>
+                    <a href="#contacto" class="btn btn-sm btn-brand">Consultar</a>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <div class="col-sm-6 col-lg-4">
+              <article class="card product-card">
+                <picture>
+                  <source media="(max-width: 767.98px)" srcset="assets/images/products/mobile/speaker.webp" type="image/webp">
+                  <img src="assets/images/products/speaker.jpg" class="card-img-top" alt="Parlante portatil sobre una mesa">
+                </picture>
+                <div class="card-body d-flex flex-column">
+                  <span class="badge badge-tech align-self-start mb-3">Parlante</span>
+                  <h3 class="card-title h5">BeatBox Mini</h3>
+                  <p class="card-text">Parlante portatil resistente al agua, con sonido potente y hasta 12 horas de autonomia.</p>
+                  <div class="mt-auto d-flex justify-content-between align-items-center">
+                    <strong>$44.990</strong>
+                    <a href="#contacto" class="btn btn-sm btn-brand">Consultar</a>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-soft py-5">
+        <div class="container">
+          <div class="row g-4">
+            <div class="col-md-4">
+              <h2 class="h5 fw-bold">Despacho rapido</h2>
+              <p class="mb-0">Enviamos productos seleccionados a domicilio con seguimiento en linea.</p>
+            </div>
+            <div class="col-md-4">
+              <h2 class="h5 fw-bold">Garantia clara</h2>
+              <p class="mb-0">Cada compra incluye soporte y garantia segun la categoria del producto.</p>
+            </div>
+            <div class="col-md-4">
+              <h2 class="h5 fw-bold">Asesoria personalizada</h2>
+              <p class="mb-0">Te ayudamos a elegir el equipo adecuado para estudio, trabajo o entretenimiento.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contacto" class="py-5">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-8 text-center">
+              <p class="text-uppercase section-label mb-2">Contacto</p>
+              <h2 class="h1 fw-bold">Cotiza tu proximo producto tech</h2>
+              <p>Escribenos para confirmar disponibilidad, comparar modelos o recibir una recomendacion personalizada.</p>
+              <a class="btn btn-brand btn-lg" href="mailto:contacto@technova.example">contacto@technova.example</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="text-white py-4">
+      <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+        <p class="mb-0">TechNova Store</p>
+        <p class="mb-0 small">Actividad Semana 4 | Desarrollo Frontend I</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
