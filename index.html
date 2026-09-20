@@ -128,24 +128,57 @@
               <p class="mb-0 text-muted-custom">Seleccion dinamica de productos tecnologicos cargados con JavaScript y organizados por categoria.</p>
             </div>
             <div class="col-lg-4">
-              <p id="resumenProductos" class="catalog-summary mb-0" aria-live="polite">Cargando catalogo...</p>
+              <p id="resumenProductos" class="visually-hidden" aria-live="polite">Cargando catalogo...</p>
             </div>
           </div>
 
-          <div class="product-toolbar d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3 mb-4">
-            <div id="filtrosProductos" class="btn-group flex-wrap" role="group" aria-label="Filtrar productos por categoria">
-              <button class="btn btn-outline-brand active" type="button" data-categoria="Todos">Todos</button>
-              <button class="btn btn-outline-brand" type="button" data-categoria="Notebook">Notebooks</button>
-              <button class="btn btn-outline-brand" type="button" data-categoria="Audio">Audio</button>
-              <button class="btn btn-outline-brand" type="button" data-categoria="Accesorio">Accesorios</button>
-              <button class="btn btn-outline-brand" type="button" data-categoria="Gaming">Gaming</button>
+          <div class="product-toolbar d-flex flex-column gap-3 mb-4">
+            <form id="formBusqueda" class="search-form" role="search">
+              <label for="busquedaProducto" class="form-label fw-semibold mb-2">Buscar productos</label>
+              <div class="input-group">
+                <input type="search" class="form-control" id="busquedaProducto" name="busquedaProducto" placeholder="Ejemplo: notebook, audio, monitor">
+                <button class="btn btn-brand" type="submit">Buscar</button>
+                <button class="btn btn-outline-brand" id="limpiarBusqueda" type="button">Limpiar</button>
+              </div>
+            </form>
+            <div class="d-flex flex-column flex-lg-row justify-content-between align-items-lg-center gap-3">
+              <div id="filtrosProductos" class="btn-group flex-wrap" role="group" aria-label="Filtrar productos por categoria">
+                <button class="btn btn-outline-brand active" type="button" data-categoria="Todos">Todos</button>
+                <button class="btn btn-outline-brand" type="button" data-categoria="Notebook">Notebooks</button>
+                <button class="btn btn-outline-brand" type="button" data-categoria="Audio">Audio</button>
+                <button class="btn btn-outline-brand" type="button" data-categoria="Accesorio">Accesorios</button>
+                <button class="btn btn-outline-brand" type="button" data-categoria="Gaming">Gaming</button>
+              </div>
+              <p id="detalleProducto" class="product-hint mb-0" aria-live="polite">Agrega productos al carrito o busca por nombre, categoria o descripcion.</p>
             </div>
-            <p id="detalleProducto" class="product-hint mb-0" aria-live="polite">Pasa el mouse sobre un producto para ver un detalle rapido.</p>
           </div>
 
           <div id="estadoCatalogo" class="alert alert-info" role="status">Cargando productos desde el archivo JSON...</div>
-          <div id="productosDinamicos" class="row g-4" aria-live="polite"></div>
-          <div id="mensajeCatalogo" class="mt-4" aria-live="polite"></div>
+          <div class="row g-4 align-items-start">
+            <div class="col-lg-8">
+              <div id="productosDinamicos" class="row g-4" aria-live="polite"></div>
+              <div id="mensajeCatalogo" class="mt-4" aria-live="polite"></div>
+            </div>
+            <aside class="col-lg-4">
+              <div class="cart-panel">
+                <div class="d-flex justify-content-between align-items-start gap-3 mb-3">
+                  <div>
+                    <p class="text-uppercase section-label mb-1">Carrito</p>
+                    <h3 class="h4 fw-bold mb-0">Resumen de compra</h3>
+                  </div>
+                  <span id="contadorCarrito" class="cart-count" aria-label="Cantidad de productos en el carrito">0</span>
+                </div>
+                <div id="listaCarrito" class="cart-items" aria-live="polite">
+                  <p class="text-muted-custom mb-0">El carrito esta vacio.</p>
+                </div>
+                <div class="cart-total d-flex justify-content-between align-items-center mt-3 pt-3">
+                  <span>Total</span>
+                  <strong id="totalCarrito">$0</strong>
+                </div>
+                <button id="vaciarCarrito" class="btn btn-outline-brand w-100 mt-3" type="button">Vaciar carrito</button>
+              </div>
+            </aside>
+          </div>
           <noscript>
             <div class="alert alert-warning mt-4">Activa JavaScript para ver el catalogo interactivo.</div>
           </noscript>
@@ -215,7 +248,7 @@
     <footer class="text-white py-4">
       <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
         <p class="mb-0">TechNova Store</p>
-        <p class="mb-0 small">Actividad Semana 5 | Desarrollo Frontend I</p>
+        <p class="mb-0 small">Actividad Semana 6 | Desarrollo Frontend I</p>
       </div>
     </footer>
 

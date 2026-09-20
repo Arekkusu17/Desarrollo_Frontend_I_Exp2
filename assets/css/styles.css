@@ -50,15 +50,15 @@ button:focus-visible {
 }
 
 .hero-notebooks {
-  background-image: url("../images/hero/notebooks.jpg");
+  background-image: url("../img/hero/notebooks.jpg");
 }
 
 .hero-audio {
-  background-image: url("../images/hero/audio.jpg");
+  background-image: url("../img/hero/audio.jpg");
 }
 
 .hero-setup {
-  background-image: url("../images/hero/setup.jpg");
+  background-image: url("../img/hero/setup.jpg");
 }
 
 .hero-overlay {
@@ -140,6 +140,10 @@ button:focus-visible {
   padding-bottom: 0.25rem;
 }
 
+.search-form {
+  max-width: 760px;
+}
+
 .dynamic-product {
   cursor: default;
 }
@@ -164,6 +168,59 @@ button:focus-visible {
   color: var(--brand-dark);
   font-size: 0.95rem;
   font-weight: 600;
+}
+
+.cart-panel {
+  position: sticky;
+  top: 5.5rem;
+  padding: 1.25rem;
+  border: 1px solid rgba(15, 23, 42, 0.1);
+  border-radius: 0.5rem;
+  background-color: #ffffff;
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.06);
+}
+
+.cart-count {
+  min-width: 2.25rem;
+  height: 2.25rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  background-color: var(--brand);
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.cart-items {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.85rem 0;
+  border-bottom: 1px solid rgba(15, 23, 42, 0.08);
+}
+
+.cart-item:last-child {
+  border-bottom: 0;
+}
+
+.cart-action {
+  width: 2rem;
+  height: 2rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.cart-total {
+  border-top: 1px solid rgba(15, 23, 42, 0.12);
 }
 
 .contact-form {
@@ -207,15 +264,15 @@ footer {
   }
 
   .hero-notebooks {
-    background-image: url("../images/hero/mobile/notebooks.webp");
+    background-image: url("../img/hero/mobile/notebooks.webp");
   }
 
   .hero-audio {
-    background-image: url("../images/hero/mobile/audio.webp");
+    background-image: url("../img/hero/mobile/audio.webp");
   }
 
   .hero-setup {
-    background-image: url("../images/hero/mobile/setup.webp");
+    background-image: url("../img/hero/mobile/setup.webp");
   }
 
   .display-5 {
@@ -231,6 +288,10 @@ footer {
   .btn-group.flex-wrap .btn {
     border-radius: 0.375rem;
     margin: 0.15rem;
+  }
+
+  .cart-panel {
+    position: static;
   }
 }
 
