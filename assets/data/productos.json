@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "nombre": "NovaBook Air 14",
+    "categoria": "Notebook",
+    "descripcion": "Equipo liviano con pantalla Full HD, 16 GB de RAM y bateria para jornadas extensas.",
+    "precio": "$749.990",
+    "imagen": "assets/images/products/notebook.jpg",
+    "imagenMobile": "assets/images/products/mobile/notebook.webp",
+    "alt": "Notebook plateado sobre un escritorio",
+    "stock": 8,
+    "recomendado": true
+  },
+  {
+    "id": 2,
+    "nombre": "SoundWave Pro",
+    "categoria": "Audio",
+    "descripcion": "Audifonos bluetooth con cancelacion de ruido y modo ambiente para estudiar o viajar.",
+    "precio": "$89.990",
+    "imagen": "assets/images/products/headphones.jpg",
+    "imagenMobile": "assets/images/products/mobile/headphones.webp",
+    "alt": "Audifonos inalambricos de color negro",
+    "stock": 14,
+    "recomendado": true
+  },
+  {
+    "id": 3,
+    "nombre": "ClickMaster MX",
+    "categoria": "Accesorio",
+    "descripcion": "Mouse ergonomico con sensor preciso, conexion inalambrica y botones programables.",
+    "precio": "$34.990",
+    "imagen": "assets/images/products/mouse.jpg",
+    "imagenMobile": "assets/images/products/mobile/mouse.webp",
+    "alt": "Mouse inalambrico sobre una superficie oscura",
+    "stock": 21,
+    "recomendado": false
+  },
+  {
+    "id": 4,
+    "nombre": "KeyStorm RGB",
+    "categoria": "Gaming",
+    "descripcion": "Teclado mecanico compacto con retroiluminacion y switches tactiles para escritura rapida.",
+    "precio": "$59.990",
+    "imagen": "assets/images/products/keyboard.jpg",
+    "imagenMobile": "assets/images/products/mobile/keyboard.webp",
+    "alt": "Teclado mecanico iluminado",
+    "stock": 10,
+    "recomendado": false
+  },
+  {
+    "id": 5,
+    "nombre": "ViewMax 27",
+    "categoria": "Accesorio",
+    "descripcion": "Monitor IPS de 27 pulgadas con alta definicion, bordes delgados y ajuste de inclinacion.",
+    "precio": "$189.990",
+    "imagen": "assets/images/products/monitor.jpg",
+    "imagenMobile": "assets/images/products/mobile/monitor.webp",
+    "alt": "Monitor ancho mostrando una interfaz de trabajo",
+    "stock": 6,
+    "recomendado": true
+  },
+  {
+    "id": 6,
+    "nombre": "BeatBox Mini",
+    "categoria": "Audio",
+    "descripcion": "Parlante portatil resistente al agua, con sonido potente y hasta 12 horas de autonomia.",
+    "precio": "$44.990",
+    "imagen": "assets/images/products/speaker.jpg",
+    "imagenMobile": "assets/images/products/mobile/speaker.webp",
+    "alt": "Parlante portatil sobre una mesa",
+    "stock": 17,
+    "recomendado": false
+  }
+]

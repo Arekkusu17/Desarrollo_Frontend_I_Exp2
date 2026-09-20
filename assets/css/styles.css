@@ -21,6 +21,12 @@ button:focus-visible {
   outline-offset: 3px;
 }
 
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--brand);
+  box-shadow: 0 0 0 0.25rem rgba(15, 118, 110, 0.16);
+}
+
 .navbar {
   box-shadow: 0 2px 16px rgba(15, 23, 42, 0.08);
 }
@@ -106,6 +112,68 @@ button:focus-visible {
   --bs-btn-hover-border-color: var(--brand-dark);
 }
 
+.btn-outline-brand {
+  --bs-btn-color: var(--brand-dark);
+  --bs-btn-border-color: rgba(15, 118, 110, 0.35);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: var(--brand);
+  --bs-btn-hover-border-color: var(--brand);
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: var(--brand-dark);
+  --bs-btn-active-border-color: var(--brand-dark);
+}
+
+.catalog-summary,
+.product-hint {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.catalog-summary {
+  padding: 0.85rem 1rem;
+  border: 1px solid rgba(15, 118, 110, 0.14);
+  border-radius: 0.5rem;
+  background-color: #f8fbfb;
+}
+
+.product-toolbar {
+  padding-bottom: 0.25rem;
+}
+
+.dynamic-product {
+  cursor: default;
+}
+
+.dynamic-product:focus,
+.dynamic-product:hover {
+  border-color: rgba(15, 118, 110, 0.45);
+}
+
+.recommended-label {
+  color: #7c2d12;
+  background-color: #ffedd5;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 1;
+  padding: 0.4rem 0.6rem;
+  white-space: nowrap;
+}
+
+.stock-text {
+  color: var(--brand-dark);
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.contact-form {
+  padding: 1.25rem;
+  border: 1px solid rgba(15, 23, 42, 0.1);
+  border-radius: 0.5rem;
+  background-color: #ffffff;
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.06);
+}
+
 .feature-box {
   border: 1px solid rgba(15, 23, 42, 0.08);
   transition: transform 180ms ease, border-color 180ms ease;
@@ -152,6 +220,17 @@ footer {
 
   .display-5 {
     font-size: 2rem;
+  }
+
+  .btn-group.flex-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+  }
+
+  .btn-group.flex-wrap .btn {
+    border-radius: 0.375rem;
+    margin: 0.15rem;
   }
 }
 
